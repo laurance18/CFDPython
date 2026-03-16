@@ -7,8 +7,15 @@ length = 2 # length to discretize
 nx = 41 # number of nodes
 nt = 25 # number of time steps
 dx = length / (nx-1) # spatial spacing
-dt = 0.025  # time spacing
 c = 1 # proportion factor
+
+# ----------------------------------- #
+def CFL(sigma, u, dx):
+  return float(sigma * dx / u)
+
+sigma = 0.5
+dt = CFL(sigma, c, dx) # time spacing
+# ----------------------------------- #
 
 # Wave definition
 u = np.ones(nx)
