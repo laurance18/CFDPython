@@ -18,7 +18,7 @@ u = np.ones(nx)
 u[int(.5 / dx):int(1 / dx + 1)] = 2  #setting u = 2 between 0.5 and 1 as per our I.C.s
 
 dt = CFL(sigma, np.max(u), dx) # WORKAROUND: instead of u=c, we used u=np.max(u) to be able to keep
-print(f"dt: {dt}")             # Courant number between 0 and
+print(f"dt: {dt}")             # Courant number between 0 and 1
 
 # Plot setup for timestep animation
 x = np.linspace(0, length, nx)
