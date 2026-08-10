@@ -16,7 +16,7 @@ dt = sigma * dx
 x = np.linspace(0, 2, nx)
 y = np.linspace(0, 2, ny)
 
-u = np.ones((ny, nx)) # BCs arlready applied (everywhere is 1)
+u = np.ones((ny, nx)) # BCs already applied (everywhere is 1)
 un = np.copy(u) # Copy of u
 
 # ICs
