@@ -3,6 +3,8 @@ from matplotlib import pyplot as plt
 from matplotlib import cm
 from mpl_toolkits.mplot3d import Axes3D
 
+# SECTION: 2D Linear Convection
+
 # Variables
 nx = 81
 ny = 81
