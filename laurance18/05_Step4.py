@@ -2,7 +2,7 @@ import numpy as np
 import sympy
 from matplotlib import pyplot as plt
 
-# 1D Burgers Equation
+# SECTION: 1D Burgers Equation
 
 x, nu, t = sympy.symbols('x nu t')
 phi = (sympy.exp(-(x - 4 * t)**2 / (4 * nu * (t + 1))) +
